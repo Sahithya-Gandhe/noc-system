@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #050303;
+  position: relative;
+  overflow-y: auto;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(5px); /* Adjust blur intensity as needed */
+  z-index: -1;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 2rem;
+}
+
+/* Auth Forms */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 76px);
+  padding: 2rem 1rem;
+}
+
+.auth-form-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Dashboard Styles */
+.dashboard-header {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.card-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+}
+
+/* Table Styles */
+.table th {
+  font-weight: 600;
+  border-top: none;
+  background-color: #f8f9fa;
+}
+
+/* NOC Certificate Styles */
+.noc-certificate {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Status Badge Styles */
+.badge {
+  padding: 0.5rem 0.75rem;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+/* Button Styles */
+.btn {
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #8B0000;
+  border-color: #8B0000;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #A52A2A;
+  border-color: #A52A2A;
+}
+
+/* Form Styles */
+.btn-outline-primary {
+  color: #8B0000;
+  border-color: #8B0000;
+  font-weight: bold;
+}
+
+.btn-outline-primary:hover {
+  background-color: #8B0000;
+  border-color: #8B0000;
+  color: white;
+}
+.form-control {
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.navbar.bg-primary {
+  background-color: #FFFFFF !important; /* White */
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .auth-form-container {
+    padding: 1.5rem;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+
+  .dashboard-header,
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .noc-certificate {
+    padding: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .auth-form-container {
+    padding: 1rem;
+  }
+
+  .noc-certificate {
+    padding: 1rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.5rem;
+  }
+}
