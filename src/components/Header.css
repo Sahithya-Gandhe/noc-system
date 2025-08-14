@@ -1,0 +1,16 @@
+.app-header {
+  background-color: #ffffff; /* White background */
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black; /* Change text color to black for contrast */
+  border-bottom: 1px solid #e0e0e0; /* Optional: Add a subtle border */
+}
+
+.app-logo {
+  height: 80px; /* Reduced logo size */
+  pointer-events: none;
+}
